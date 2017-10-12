@@ -1,4 +1,13 @@
 /*mobile first*/
+.hero-img {
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  top: 12.3rem;
+  left: 6.5rem;
+}
+
 
 
 
