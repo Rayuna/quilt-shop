@@ -1,12 +1,61 @@
 /*mobile first*/
-.hero-img {
+body{
+  color: #202223;
+  background-color: #D7D8CF !important;
+}
+.jumbotron{
   position: relative;
+  background: url(../img/clem-onojeghuo-205193.jpg);
+  height: 100%;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
-.hero-text {
-  position: absolute;
-  top: 12.3rem;
-  left: 6.5rem;
+
+.jumbotron h2{
+  color: #d9b257;
+  text-shadow: 2px 2px #202223;
 }
+
+main{
+  background-color: #B48A2F;
+}
+
+.display-main-top-wrap{
+  background-color: #63746e;
+}
+
+.display-main-wrap-mid{
+  background-color: #C2A267
+}
+
+.card-body{
+  color:inherit;
+  background-color: #D7D8CF;
+}
+.thumbnails-hidden{
+  display: none;
+}
+
+.img-thumbnail{
+  min-height: 400px;
+
+}
+
+.beSewing{
+  border: 5px solid #63746e;
+}
+
+button{
+  color: #B48A2F;
+  background-color: #63746e;
+}
+
+button:hover{
+  color: inherit;
+  background-color: #B48A2F;
+}
+
 
 
 
@@ -16,3 +65,27 @@
 
 
 /*Media Queries*/
+@media only screen and (min-width:426px) and (max-width: 1024px){
+
+.jumbotron{
+  background-position: right;
+  padding: 18rem 2rem !important;
+}
+
+}
+
+
+@media (min-width:1025px){
+
+.jumbotron{
+  background-position: right;
+  padding: 25rem 2rem !important;
+}
+.thumbnails-hidden{
+  display: block;
+}
+
+#carousel-container{
+  display: none;
+}
+}

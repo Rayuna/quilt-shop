@@ -16,8 +16,8 @@
   </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#">Mary SewNSew</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,47 +40,44 @@
       </div>
     </div>
   </nav>
-    <div class="row">
-      <div class="hero-img">
-        <img class="img-fluid" src="./img/clem-onojeghuo-205193.jpg" alt="hero-img">
-        <div class="hero-text">
-          <h2>Mary SewNSew</h2>
-      </div>
-    </div>
+    <!--<div class="container-fluid">-->
+  <div class="jumbotron mb-0">
+      <h2 class="display-3 text-center">Mary SewNSew</h2>
   </div>
+  <!--</div>-->
 </header>
-<main>
-  <section class="container-flex pt-3 bg-white">
-    <div class="row">
-      <div class="col">
-        <h3 class="text-center mb-3" id="about">About Me</h3>
-        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros ut velit vehicula cursus. Fusce ornare purus et elit ornare, in suscipit mauris congue. Curabitur ac luctus neque, vitae facilisis eros. Donec faucibus, diam vitae bibendum tincidunt, nibh enim aliquam nisi, vitae dapibus tortor ipsum eu nibh. Fusce erat nulla, dictum eget ante eu, vestibulum hendrerit tellus. Curabitur porttitor vel est id pellentesque. Nam ac porta ex. Nunc non elementum justo, vel vestibulum odio. Donec ac ligula suscipit, sagittis libero quis, commodo justo.</p>
+<main class="main-wrap pb-4">
+  <div class="display-main-top-wrap rounded">
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center mt-3 mb-3" id="about">About Me</h3>
+          <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros ut velit vehicula cursus. Fusce ornare purus et elit ornare, in suscipit mauris congue. Curabitur ac luctus neque, vitae facilisis eros. Donec faucibus, diam vitae bibendum tincidunt, nibh enim aliquam nisi, vitae dapibus tortor ipsum eu nibh. Fusce erat nulla, dictum eget ante eu, vestibulum hendrerit tellus. Curabitur porttitor vel est id pellentesque. Nam ac porta ex. Nunc non elementum justo, vel vestibulum odio. Donec ac ligula suscipit, sagittis libero quis, commodo justo.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="container-flex">
-    <h3 class="text-center" id="services">Services</h3>
-    <div class="row">
-      <div class="col">
-        <ul class="list-unstyled text-center">
-          <li>Lorem ipsum</li>
-          <li>Fusce eu eros</li>
-          <li>Curabitur ac luctus neque</li>
-          <li>Nam ac porta ex</li>
+    </section>
+  </div>
+  <div class="display-main-wrap-mid">
+    <section>
+      <h3 class="text-center pt-3" id="services">Sevices</h3>
+      <div class="d-flex justify-content-around text-center flex-wrap mt-2">
+        <ul class="list-unstyled">
+          <li class="p-1">Lorem ipsum</li>
+          <li class="p-1">Fusce eu eros</li>
+          <li class="p-1">Curabitur ac luctus neque</li>
+          <li class="p-1">Nam ac porta ex</li>
+        </ul>
+        <ul class="list-unstyled">
+          <li class="p-1">Lorem ipsum</li>
+          <li class="p-1">Fusce eu eros</li>
+          <li class="p-1">Curabitur ac luctus neque</li>
+          <li class="p-1">Nam ac porta ex</li>
         </ul>
       </div>
-      <div class="col">
-        <ul class="list-unstyled text-center">
-          <li>Lorem ipsum</li>
-          <li>Fusce eu eros</li>
-          <li>Curabitur ac luctus neque</li>
-          <li>Nam ac porta ex</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <section>
-    <div class="container">
+    <div class="container-fluid mt-3" id="carousel-container">
       <div class="card">
         <div class="card-body text-center">
           <h4>Example Projects</h4>
@@ -136,33 +133,64 @@
     </div>
   </div>
 <!--Cards to be displayed at lg breakpoint only-->
-   <div class="invisible">
-    <div container-fluid>
-      <h2 class="text-center">Example Projects</h2>
-      <div class="row">
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/valore-eagle.png" alt="thumbnail-1"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/valore.png" alt="thumbnail-2"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/upholstery.png" alt="thumbnail-3"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/upholstery-2.png" alt="thumbnail-4"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/childrens-pjs.png" alt="thumbnail-5"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/childrens-pjs-buttons.png" alt="thumbnail-6"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" style="" src="./img/childs-hooded-towel.png" alt="thumbnail-7"></div>
-        <div class="col-lg-3"><img class="img-thumbnail" src="./img/jacket-embroidery.png" alt="thumbnail-8"></div>
-      </div>
-    </div>
+   <div class="thumbnails-hidden text-center">
+    <h2 class="pb-2 mt-3 mb-3">Example Projects</h2>
+    <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" style="border-color:#202223;" src="./img/valore-eagle.png" alt="thumbnail-1">
+    <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" src="./img/valore.png" alt="thumbnail-2">
+    <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" src="./img/upholstery.png" alt="thumbnail-3">
+    <img class="border rounded mr-1 mt-2 w-25 d-inline-flex flex-wrap" src="./img/upholstery-2.png" alt="thumbnail-4">
+    <img class="border rounded mr-1 mt-2 w-25 d-inline-flex flex-wrap" src="./img/childrens-pjs.png" alt="thumbnail-5">
+    <img class="border rounded mr-1 mt-2 w-25 d-inline-flex flex-wrap" src="./img/childrens-pjs-buttons.png" alt="thumbnail-6">
+    <img class="border rounded mr-1 mt-2 w-25 d-inline-flex flex-wrap" src="./img/childs-hooded-towel.png" alt="thumbnail-7">
+    <img class="border rounded mr-1 mt-2 w-25 d-inline-flex flex-wrap" src="./img/jacket-embroidery.png" alt="thumbnail-8">
    </div>
   </section>
 </main>
 <footer>
   <section>
-    <div class="container-fluid">
-    <div class="row" id="contact">
-      <img class="col" src="#" alt="">
-      <div class="col">
-        <button class="btn">Let's get started!</button>
+    <div class="container">
+      <div class="row mt-3" id="contact">
+        <div class="col-xs-12 col-md-6 d-flex justify-content-center">
+        <a href="http://www.freepik.com/free-vector/hand-drawn-tailor-elements_816484.htm">
+          <img class="beSewing rounded-circle" src="./img/sewing-contact.png" alt="contact-img">
+        </a>
       </div>
+        <div class="col-xs-12 col-md-6 d-flex flex-wrap justify-content-center align-items-center">
+          <h4 class="text-center mt-2">Have a project in mind and looking for a quote?</h4>
+          <button type="button" class="modalBtn btn btn-lg" data-toggle="modal" data-target="#email" aria-pressed="false" autocomplete="off">Let's get started!</button>
+          <!--Modal-->
+          <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Contact Mary SEWNSEW</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>For an obligation free quote on services please fill in your e-mail and any questions you may have. Please allow 24-48 hours for a response.</p>
+                  <form>
+                    <div class="form-group">
+                      <label for="visitorEmailInput">Email address</label>
+                      <input type="email" class="form-control" id="visitorEmailInput" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="visitorQuestions">How may I help you?</label>
+                      <textarea class="form-control" id="questions" rows="5"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Send</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
+      <div class="row mt-3 mb-2">
         <a href="#">
           <img src="./img/etsy-icon.png" alt="etsy-shop-link" style="width:3em; height:3em;">
         </a>
