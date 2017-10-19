@@ -2,6 +2,12 @@
 body{
   color: #202223;
   background-color: #D7D8CF;
+  font-family: 'Gentium Basic', serif;
+}
+
+.sewing-roll-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .jumbotron{
@@ -26,7 +32,9 @@ body{
   padding: 75px 0;
 }
 
-h1{
+.jumbotron h1{
+  font-family: 'Homemade Apple', cursive;
+  font-size: 35px;
   color: #d9b257;
   text-shadow: 2px 2px #202223;
 }
@@ -81,21 +89,25 @@ main{
 
 
 /*Media Queries*/
-@media only screen and (min-width:426px) and (max-width: 1024px){
+@media only screen and (min-width:768px) and (max-width: 1024px){
 
-/*.jumbotron{
-  background-position: right;
-  padding: 18rem 2rem !important;
-*/
+.jumbotron h1 {
+  font-size: 65px;
+}
 
 }
 
 
-@media (min-width:1024px){
+@media (min-width:1025px){
 
 .jumbotron .container{
   padding: 200px 0;
 }
+
+.jumbotron h1{
+  font-size: 95px;
+}
+
 .project-images-hidden{
 display: block;
 }
