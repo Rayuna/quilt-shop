@@ -5,9 +5,16 @@ body{
   font-family: 'Gentium Basic', serif;
 }
 
+hr {
+  margin:0;
+}
 .sewing-roll-icon {
   width: 24px;
   height: 24px;
+}
+
+.navbar-item{
+  color: inherit;
 }
 
 .jumbotron{
@@ -25,7 +32,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .jumbotron .container {
@@ -35,7 +42,7 @@ body{
 .jumbotron h1{
   font-family: 'Homemade Apple', cursive;
   font-size: 35px;
-  color: #d9b257;
+  color: #ffe16b;
   text-shadow: 2px 2px #202223;
 }
 
@@ -49,6 +56,26 @@ main{
 
 .display-main-wrap-mid{
   background-color: #C2A267
+}
+
+.button-img{
+  padding:0;
+}
+
+.button-img img {
+  width: 12.5%;
+}
+
+.stitch-border{
+  height: 7px;
+  background: url(../img/stich-border.png) repeat-x 0 0;
+  background-size: 12px;
+  border: 0;
+  margin:0;
+}
+
+.section-top-shadow{
+  box-shadow: 0 -5px 4px -4px #202223;
 }
 
 .card-body{
@@ -89,23 +116,29 @@ main{
 
 
 /*Media Queries*/
-@media only screen and (min-width:768px) and (max-width: 1024px){
+@media only screen and (min-width:768px){
 
 .jumbotron h1 {
   font-size: 65px;
 }
 
+.button-img img{
+ width: 50%;
 }
 
 
-@media (min-width:1025px){
+@media (min-width:1024px){
 
 .jumbotron .container{
   padding: 200px 0;
 }
 
 .jumbotron h1{
-  font-size: 95px;
+  font-size: 92px;
+}
+
+.button-img img{
+  width:75%;
 }
 
 .project-images-hidden{
@@ -114,5 +147,4 @@ display: block;
 
 #carousel-container{
   display: none;
-}
 }
