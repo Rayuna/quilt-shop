@@ -1,3 +1,5 @@
+
+
 /*mobile first*/
 body{
   color: #202223;
@@ -8,7 +10,7 @@ body{
 hr {
   margin:0;
 }
-.sewing-roll-icon {
+.glyph-icon{
   width: 24px;
   height: 24px;
 }
@@ -58,13 +60,11 @@ main{
   background-color: #C2A267
 }
 
-.button-img{
-  padding:0;
+.button-img img {
+  width: 25%;
+
 }
 
-.button-img img {
-  width: 12.5%;
-}
 
 .stitch-border{
   height: 7px;
@@ -116,7 +116,7 @@ main{
 
 
 /*Media Queries*/
-@media only screen and (min-width:768px){
+@media all and (min-width: 768px){
 
 .jumbotron h1 {
   font-size: 65px;
@@ -126,8 +126,17 @@ main{
  width: 50%;
 }
 
+.project-images-hidden{
+  display:block;
+}
 
-@media (min-width:1024px){
+#carousel-container{
+  display: none;
+}
+
+}
+
+@media all and (min-width: 1024px){
 
 .jumbotron .container{
   padding: 200px 0;
@@ -147,4 +156,6 @@ display: block;
 
 #carousel-container{
   display: none;
+}
+
 }

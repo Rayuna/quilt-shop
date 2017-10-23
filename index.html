@@ -25,8 +25,8 @@
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="img-fluid sewing-roll-icon mb-2" src="./svg-icons/si-glyph-sewing-roll.svg" alt="thread-icon"/> Mary SewNSew</a>
+          <div class="container">
+            <a class="navbar-brand" href="#"><img class="glyph-icon mb-2" src="./svg/si-glyph-sewing-roll.svg" alt="thread-icon"/>Mary SewNSew</a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
             <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#about"><strong>About</strong></a>
+                  <strong><a class="nav-link" href="#about">About</a></strong>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services"><strong>Services</strong></a>
+                  <strong><a class="nav-link" href="#services">Services</a></strong>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#examples"><strong>Examples</strong></a>
+                  <strong><a class="nav-link" href="#examples">Examples</a></strong>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact"><strong>Contact</strong></a>
+                  <strong><a class="nav-link" href="#contact">Contact</a></strong>
                 </li>
               </ul>
             </div>
@@ -69,13 +69,13 @@
     <section id="about">
       <hr class="stitch-border">
       <div class="container pt-4 pb-4">
-        <div class="row justify-content-center align-items-center text-center">
-          <div class="col-md-2 col-lg-1 button-img"><img class="img-fluid"  src="./img/button.png" alt="button-image"></div>
-            <div class="col-md-8 cold-lg-10">
-              <h2 class="mt-3 mb-3">About Me</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros ut velit vehicula cursus. Fusce ornare purus et elit ornare, in suscipit mauris congue. Curabitur ac luctus neque, vitae facilisis eros. Donec faucibus, diam vitae bibendum tincidunt, nibh enim aliquam nisi, vitae dapibus tortor ipsum eu nibh. Fusce erat nulla, dictum eget ante eu, vestibulum hendrerit tellus. Curabitur porttitor vel est id pellentesque. Nam ac porta ex. Nunc non elementum justo, vel vestibulum odio. Donec ac ligula suscipit, sagittis libero quis, commodo justo.</p>
+        <div class="row justify-content-center align-items-center text-center no-gutters">
+          <div class="col-md-3 col-lg-2 mb-4 mb-md-0 mr-auto button-img"><img class="img-fluid"  src="./img/button.png" alt="button-image"></div>
+            <div class="col-md-6">
+              <h2 class="mb-3">About Me</h2>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros ut velit vehicula cursus. Fusce ornare purus et elit ornare, in suscipit mauris congue. Curabitur ac luctus neque, vitae facilisis eros. Donec faucibus, diam vitae bibendum tincidunt, nibh enim aliquam nisi, vitae dapibus tortor ipsum eu nibh. Fusce erat nulla, dictum eget ante eu, vestibulum hendrerit tellus. Curabitur porttitor vel est id pellentesque. Nam ac porta ex. Nunc non elementum justo, vel vestibulum odio. Donec ac ligula suscipit, sagittis libero quis, commodo justo.</p>
             </div>
-          <div class="col-md-2 col-lg-1 button-img"><img class="img-fluid" src="./img/button.png" alt="button-image"></div>
+          <div class="col-md-3 col-lg-2 mt-3 mt-md-0 ml-auto button-img"><img class="img-fluid" src="./img/button.png" alt="button-image"></div>
         </div>
       </div>
     </section>
@@ -87,16 +87,16 @@
         <h2 class="mb-3 text-center">Services</h2>
         <div class="row justify-content-center text-center">
             <ul class="col-md-4 list-unstyled">
-              <li class="p-1">Lorem ipsum</li>
-              <li class="p-1">Fusce eu eros</li>
-              <li class="p-1">Curabitur ac luctus neque</li>
-              <li class="p-1">Nam ac porta ex</li>
+              <li class="p-1">Long Arm Quilting</li>
+              <li class="p-1">Quilts - up to queen size</li>
+              <li class="p-1">T-shirt Quilts</li>
+              <li class="p-1">Baby Quilts &amp Accessories</li>
             </ul>
             <ul class="col-md-4 list-unstyled">
-              <li class="p-1">Lorem ipsum</li>
-              <li class="p-1">Fusce eu eros</li>
-              <li class="p-1">Curabitur ac luctus neque</li>
-              <li class="p-1">Nam ac porta ex</li>
+              <li class="p-1">Children's Clothing</li>
+              <li class="p-1">Embroidery &amp Embellishment</li>
+              <li class="p-1">Minor Alteraions (wedding dresses)</li>
+              <li class="p-1">Home Decor</li>
             </ul>
         </div>
       </div>
@@ -105,7 +105,7 @@
   <section>
     <div class="examples section-top-shadow" id="examples">
       <hr class="stitch-border">
-      <div class="container-fluid pt-4 pb-4 " id="carousel-container">
+      <div class="container pt-4 pb-4" id="carousel-container">
         <div class="card">
           <div class="card-body text-center">
             <h2>Example Projects</h2>
@@ -171,19 +171,21 @@
         </div>
       </div>
 <!--Cards to be displayed at lg breakpoint only-->
-     <div class="project-images-hidden pt-4 pb-4 text-center">
-      <h2 class="mt-3 mb-4">Example Projects</h2>
-      <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" src="./img/valore-eagle.png" alt="thumbnail-1">
-      <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" src="./img/valore.png" alt="thumbnail-2">
-      <img class="border rounded mr-1 w-25 d-inline-flex flex-wrap" src="./img/valore-2.png" alt="thumbnail-3">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/upholstery.png" alt="thumbnail-4">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/upholstery-2.png" alt="thumbnail-5">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/childrens-pjs.png" alt="thumbnail-6">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/childrens-pjs-buttons.png" alt="thumbnail-7">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/childs-hooded-towel.png" alt="thumbnail-8">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/jacket-embroidery.png" alt="thumbnail-9">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/butterfly.png" alt="thumbnail-10">
-      <img class="border rounded mr-1 mt-1 w-25 d-inline-flex flex-wrap" src="./img/campers.png" alt="thumbnail-11">
+     <div class="container project-images-hidden pt-4 pb-4">
+      <h2 class="mt-3 mb-4 text-center">Example Projects</h2>
+      <div class="row no-gutters justify-content-center">
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/valore-eagle.png" alt="thumbnail-1"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/valore.png" alt="thumbnail-2"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/valore-2.png" alt="thumbnail-3"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/upholstery.png" alt="thumbnail-4"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/upholstery-2.png" alt="thumbnail-5"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/childrens-pjs.png" alt="thumbnail-6"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/childrens-pjs-buttons.png" alt="thumbnail-7"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/childs-hooded-towel.png" alt="thumbnail-8"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/jacket-embroidery.png" alt="thumbnail-9"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/butterfly.png" alt="thumbnail-10"></div>
+        <div class="col-md-3 ml-2 mb-2"><img class="img-fluid border rounded" src="./img/campers.png" alt="thumbnail-11"></div>
+      </div>
      </div>
    </div>
   </section>
@@ -232,17 +234,17 @@
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Send</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" value="send">Send</button>
+                    <button type="button" class="btn btn-secondary" value="close" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container mt-4">
+        <div class="container mt-3 mb-3">
           <div class="row justify-content-center text-center">
-            <p class="mb-1">Visit My Other Pages For The Latest Updates On Current Projects!</p>
+            <p class="mb-2">Visit Me at Facebook For Updates On Current Projects!</p>
           </div>
           <div class="row justify-content-center">
               <span class="fa-stack fa-lg">
@@ -258,12 +260,12 @@
                 </a>
               </span>
             </div>
-          <div class="container">
+          <div class="container mt-3 mb-3">
             <div class="row justify-content-center">
-              <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+              <div class="text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
             </div>
             <div class="row justify-content-center">
-                <a href="https://www.elise-burton.com">
+                <a href="http://www.elise-burton.com">
                 <i class="fa fa-copyright fa-1x" aria-hidden="true">2017 Elise Burton</i>
                 </a>
             </div>

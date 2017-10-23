@@ -1,6 +1,8 @@
-$(() => {
-  $('a[href*="#"]:not([href="#"])').click((e) => {
-    const target = $(e.target.hash);
+'use strict';
+
+$(function () {
+  $('a[href*="#"]:not([href="#"])').click(function (e) {
+    var target = $(e.target.hash);
 
     if (target.length) {
       $('html, body').animate({
