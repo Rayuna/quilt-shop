@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108811682-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108811682-2');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://use.fontawesome.com/2332410026.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700,700i|Homemade+Apple" rel="stylesheet">
     <title>Mary SewNSew</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -19,7 +29,7 @@
 <body>
 <section class="hero">
     <header>
-      <div class="container">
+      <div class="container-flex">
         <nav class="navbar navbar-expand-md navbar-light">
           <div class="container">
             <a class="navbar-brand" href="#"><img class="glyph-icon mb-2" src="./svg/si-glyph-sewing-roll.svg" alt="thread-icon"/>Mary SewNSew</a>
@@ -52,7 +62,7 @@
         <div class="container">
           <div class="row no-gutters justify-content-center text-center">
             <div class="col-lg-10 col-md-10">
-              <h1 class="display-5">Mary SewNSew</h1>
+              <h1 class="display-4">Mary SewNSew</h1>
             </div>
           </div>
         </div>
@@ -63,13 +73,14 @@
     <section id="about">
       <hr class="stitch-border">
       <div class="container pt-4 pb-4">
-        <div class="row justify-content-center align-items-center text-center no-gutters">
-          <div class="col-md-3 col-lg-2 mb-4 mb-md-0 mr-auto button-img"><img class="img-fluid"  src="./img/button.png" alt="button-image"></div>
-            <div class="col-md-6">
-              <h2 class="mb-3">About Me</h2>
-              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros ut velit vehicula cursus. Fusce ornare purus et elit ornare, in suscipit mauris congue. Curabitur ac luctus neque, vitae facilisis eros. Donec faucibus, diam vitae bibendum tincidunt, nibh enim aliquam nisi, vitae dapibus tortor ipsum eu nibh. Fusce erat nulla, dictum eget ante eu, vestibulum hendrerit tellus. Curabitur porttitor vel est id pellentesque. Nam ac porta ex. Nunc non elementum justo, vel vestibulum odio. Donec ac ligula suscipit, sagittis libero quis, commodo justo.</p>
-            </div>
-          <div class="col-md-3 col-lg-2 mt-3 mt-md-0 ml-auto button-img"><img class="img-fluid" src="./img/button.png" alt="button-image"></div>
+        <h2 class="mt-3 text-center">About Me</h2>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-xl-3 col-lg-2 align-self-center button-img"><img class="float-lg-left mx-auto  d-block" src="./img/button.png" alt="button-image"></div>
+            <div class="col-xl-6 col-lg-8 col-md-8">
+              <p class="text-justify mt-2 about-me-text">I have been sewing for more than forty years. Learning from my mother at an early age sparked my interest and I continued to pursue my passion by taking every home economics course I could throughout my education. I quickly fell in love with sewing children’s clothing and accessories after my daughter was born and again after my grandchildren were born. I’ve been quilting now for twenty years and as of 2014 I added a longarm quilting machine to my growing collection. In July of 2017 I attended classes in St. Louis hosted by Tacony, a parent company of Baby Lock. There I worked on my longarm quilting skills and was lucky enough to meet my idol, Kay Capps Cross.</p>
+              <p class="text-justify about-me-text">I always dreamed of turning my hobby into a business and so when I retired from my day job in 2015, I began working towards that dream. Mary SewNSew was created and I now look forward to sharing my passion with customers by creating lasting pieces for you and yours with love.</p>
+          </div>
+          <div class="col-xl-3 col-lg-2 align-self-center button-img"><img class="float-lg-right mx-auto d-block" src="./img/button.png" alt="button-image"></div>
         </div>
       </div>
     </section>
@@ -221,7 +232,7 @@
           <div class="col-xs-12 col-md-6 d-flex flex-wrap justify-content-center align-items-center">
             <h2 class="text-center mt-4">Have a project in mind and looking for a quote?</h2>
             <span>
-              <button type="button" class="modalBtn btn btn-lg mt-2" data-toggle="modal" data-target="#email" aria-pressed="false" autocomplete="off">
+              <button type="button" class="modalBtn btn mt-2" data-toggle="modal" data-target="#email" aria-pressed="false" autocomplete="off">
               <i class="fa fa-envelope" aria-hidden="true"></i> Let's get started!</button>
             </span>
             <!--Modal-->
@@ -248,36 +259,37 @@
                       </div>
                     <div class="row">
                       <div class="col">
-                        <form>
+                        <form action="https://formspree.io/mary@marysewnsew.com" method="POST">
                           <div class="form-group">
                             <label for="name">Your Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
                           </div>
                           <div class="form-group">
                             <label for="visitorEmailInput">Email address:</label>
-                            <input type="email" class="form-control" id="visitorEmailInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" name="email" id="visitorEmailInput" placeholder="name@example.com">
                           </div>
                           <div class="form-group">
                             <label for="visitorQuestions">How may I help you?</label>
-                            <textarea class="form-control" id="questions" rows="5"></textarea>
+                            <textarea class="form-control" id="questions" name="questions" rows="5"></textarea>
+                          </div>
+                          <input type="hidden" name="_subject" value="New submission from SewNSew!" />
+                          <div class="modal-footer" style="border: none;">
+                            <button type="submit" class="btn btn-submit" value="send">Send</button>
+                            <button type="button" class="btn btn-secondary" value="close" data-dismiss="modal">Close</button>
                           </div>
                         </form>
                       </div>
                     </div>
                   </div>
                 </div>
-                  <div class="modal-footer" style="border: none;">
-                    <button type="button" class="btn" style="background: #63746e; color: white;" value="send">Send</button>
-                    <button type="button" class="btn btn-secondary" value="close" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container mt-3 mb-3">
+      </div>
+        <div class="container mt-4 mb-3">
           <div class="row justify-content-center text-center">
-            <p class="mb-2">Visit Me at Facebook For Updates On Current Projects!</p>
+            <p class="mb-2">Visit My Facebook Page For Updates On Current Projects!</p>
           </div>
           <div class="row justify-content-center">
               <span class="fa-stack fa-lg">

@@ -1,7 +1,11 @@
+html{
+  font-size: 16px;
+}
+
 body{
   color: #202223;
-  background-color: #D7D8CF;
   font-family: 'Gentium Basic', serif;
+  background-color: #D7D8CF;
 }
 
 hr {
@@ -78,8 +82,12 @@ hr {
 }
 
 .button-img img {
-  width: 25%;
+  width: 15%;
+}
 
+.about-me-text{
+  letter-spacing: 0.5px;
+  text-indent: 35px;
 }
 
 .stitch-border{
@@ -123,25 +131,36 @@ hr {
   background-color: #B48A2F;
 }
 
+.btn-submit{
+  background: #63746e;
+  color: white;
+}
+
+.btn-submit:hover{
+  background: #55635e;
+}
+
 .fa-square{
   color: #63746e;
 }
 
 
-
-
-
-
-
 /*Media Queries*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
 @media all and (min-width: 768px){
 
 .jumbotron h1 {
   font-size: 65px;
-}
-
-.button-img img{
- width: 50%;
 }
 
 .project-images-hidden{
@@ -165,7 +184,7 @@ hr {
 }
 
 .button-img img{
-  width:75%;
+  width: 55%;
 }
 
 .project-images-hidden{
